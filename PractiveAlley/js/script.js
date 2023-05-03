@@ -9,7 +9,7 @@ function findProductFunction() {
         const productName = caseProduct[i][0]
         const numbersProduct = caseProduct[i][1]
 
-        if(searchInput.value === productName) {
+        if(searchInput.value = productName) {
             product.innerHTML = productName
             numbers.innerHTML = numbersProduct
         }
