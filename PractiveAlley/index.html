@@ -8,10 +8,29 @@
     <title>Practive Array</title>
 </head>
 <body>
-    <div class="block_input">
-        <input type="text">
-        <button onclick="findNameFunction()">Find</button>
-    </div>
+    <main>
+        <div class="block_search flex_centrel">
+            <input type="text" id="searchInput">
+        </div>
+        <div class="block_table flex_centrel">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Numbers</th>
+                </tr>
+                <tr>
+                    <td><p id="product"></p></td>
+                    <td><p id="numbers"></p></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="block_button flex_centrel">
+            <button onclick="findProductFunction()">Find</button>
+        </div>
+
+    </main>
 <script src="./js/script.js"></script>
 </body>
 </html>
