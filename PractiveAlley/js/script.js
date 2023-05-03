@@ -1,17 +1,19 @@
 "use strict"
 
-function findNameFunction() {
-    const input = document.querySelector('input') ;
-    const nameArray = [[" Maks ", 17], [" Nazar ", 28], [" Maria ", 47 ]];
-    const nameFirstArray = nameArray[0][0]
-    const nameSecondArray = nameArray[1][0]
-    const nameThirdArray = nameArray[2][0]
-   
-    if(input.value == nameFirstArray) {
-      console.log(nameArray[0])  
-    } else if(input.value == nameSecondArray) {
-        console.log(nameArray[1]) 
-    } else if(input.value == nameThirdArray) {
-        console.log(nameArray[2]) 
+function findProductFunction() {
+    const product = document.getElementById('product');
+    const numbers = document.getElementById('numbers');
+    const searchInput = document.getElementById('searchInput')
+    const caseProduct = [['Bread', 15], ['Tomato', 5], ['Chease',7], ['Milk', 13], ['Butter', 10], ['Ice-Cream', 17], ['Sour Cream', 3]];
+    for (let i = 0; i < caseProduct.length; i++) {
+        const productName = caseProduct[i][0]
+        const numbersProduct = caseProduct[i][1]
+
+        if(searchInput.value === productName) {
+            product.innerHTML = productName
+            numbers.innerHTML = numbersProduct
+        }
     }
+
 }
+
